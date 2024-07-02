@@ -3,9 +3,9 @@
 # pylint: disable=C0103
 
 from turtle import Screen
+import time
 from paddle import Paddle
 from ball import Ball
-import time
 
 screen = Screen()
 screen.setup(width=800, height=600)
