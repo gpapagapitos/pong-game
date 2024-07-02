@@ -10,3 +10,5 @@ class Paddle(Turtle):
         self.shape("square")
         self.shapesize(stretch_wid=5, stretch_len=1)
         self.color("white")
+        self.penup()
+        self.goto(350, 0)
