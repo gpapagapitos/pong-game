@@ -1,5 +1,7 @@
 """Pong game"""
+
 # pylint: disable=C0103
+
 from turtle import Screen
 from paddle import Paddle
 
