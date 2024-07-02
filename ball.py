@@ -13,6 +13,7 @@ class Ball(Turtle):
         self.penup()
         self.x_move = 10
         self.y_move = 10
+        self.move_speed = 0.1
 
     def move(self):
         """Method to move the ball"""
@@ -27,8 +28,10 @@ class Ball(Turtle):
     def bounce_x(self):
         """Method to reverse the ball's horizontal movement"""
         self.x_move *= -1
+        self.move_speed *= 0.9
 
     def reset_position(self):
         """"Method to reset the ball's position"""
         self.goto(0, 0)
+        self.move_speed = 0.1
         self.bounce_x()
