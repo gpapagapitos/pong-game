@@ -2,9 +2,10 @@
 # pylint: disable=C0103
 from turtle import Screen
 
-
 screen = Screen()
-screen.setup()
+screen.setup(width=800, height=600)
 screen.bgcolor("black")
+screen.title("Pong")
+
 
 screen.exitonclick()
