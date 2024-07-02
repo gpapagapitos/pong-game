@@ -14,6 +14,7 @@ class Scoreboard(Turtle):
         self.update_scoreboard()
 
     def update_scoreboard(self):
+        """Method to update the scoreboard"""
         self.clear()
         self.goto(-100, 200)
         self.write(self.l_score, align="center", font=("Courier", 80, "normal"))
@@ -21,9 +22,11 @@ class Scoreboard(Turtle):
         self.write(self.r_score, align="center", font=("Courier", 80, "normal"))
 
     def l_point(self):
+        """Method to increase left player's score by 1 and update scoreboard"""
         self.l_score += 1
         self.update_scoreboard()
 
     def r_point(self):
+        """Method to increase right player's score by 1 and update scoreboard"""
         self.r_score += 1
         self.update_scoreboard()
